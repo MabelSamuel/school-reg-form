@@ -9,12 +9,12 @@
     <body>
 <!-- this is the header -->
         <header>
-         <p>Home</p>
-         <p>School Policies</p>
-         <p><a href="./school.html">Admission</a></p>
-         <p>Gallery</p>
-         <p>Info</p>
-         <p>Contact</p>
+            <p><a href="/">Home</a></p>
+            <p><a href="">School Policies</a></p>
+            <p><a href="./index.html" class="active">Admission</a></p>
+            <p><a href="">Gallery</a></p>
+            <p><a href="">Info</a></p>
+            <p><a href="">Contact</a></p>
         </header>
         <!-- This shows the heading and progress bar -->
         <div>
@@ -22,214 +22,175 @@
             <p>Step 1 of 2</p>
             <progress min="0" max="100" value="50">50%</progress>
         </div>
+        <!-- child information form -->
+        <form>
             <h2>Child Information</h2>
-            <hr>
-            <form>
+            <div class="child-info">
                 <div class="name">
                     <label for="surname"><b>Surname</b></label>
-                    <input type="text" id="surname" name="name" required>
+                    <input type="text" id="surname" name="name" placeholder="Enter your surname" required>
                 
                     <label for="first-name"><b>First name</b></label>
-                    <input type="text" id="first-name" name="name" required>
+                    <input type="text" id="first-name" name="name" placeholder="Enter your first name" required>
                 
                     <label for="other-name"><b>Other names</b></label>
-                    <input type="text" id="other-name" name="name">
+                    <input type="text" id="other-name" name="name" placeholder="Enter your other name">
                 </div>
-                    <h4>Gender</h4>
-                    <select>
-                        <option>Please select one</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
+                <label for="gender" >Gender</label >
+                <select name="gender" id="gender">
+                    <option value="">Please select one</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
                 
-                    <div>
-                        <h4>Nationality</h4>
-                        <input type="radio" name="nationality">
-                        <label>Nigerian</label>
-                        <input type="radio" name="nationality">
-                        <label>Other</label>
-                
-                        <h4>If other, state here</h4>
-                        <input type="text">
-                    </div>
+                    
+                <div>
+                    <h4>Nationality</h4>
+                    <input type="radio" name="nationality">
+                    <label for="nationality" class="radio">Nigerian</label>
+                    <input type="radio" name="nationality">
+                    <label for="nationality" class="radio">Other</label>
+            
+                    <h4>If other, state here</h4>
+                    <input type="text" placeholder="Enter nationality">
+                </div>
 
-                    <div>
-                        <h4>Date of Birth</h4>
-                        <input type="date">
-                    </div>
-            <div>
-                <h4>Religion</h4>
-                <input type="radio" name="religion">
-                <label>Christian</label>
-                <input type="radio" name="religion">
-                <label>Muslim</label>
-                <input type="radio" name="religion">
-                <label>Atheist</label>
-            </div>
-            
-            <div>
-                <h4>Proposed month/year of entry</h4>
-                <input type="text">
+                <div>
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth">
+                </div>
+                <div>
+                    <h4>Religion</h4>
+                    <input type="radio" name="religion">
+                    <label for="religion" class="radio">Christian</label>
+                    <input type="radio" name="religion">
+                    <label for="religion" class="radio">Muslim</label>
+                    <input type="radio" name="religion">
+                    <label for="religion" class="radio">Atheist</label>
+                </div>
                 
-                <h4>Proposed class</h4>
-                <input type="text">
+                <div>
+                    <h4>Proposed month/year of entry</h4>
+                    <input type="month">
+                    <h4>Proposed class</h4>
+                    <input type="text" placeholder="Enter proposed class">
+                </div>
             </div>
-            
-            <div>
-                <h2>Father's Information</h2>
-                <hr>
+            <!-- father's information -->
+            <h2>Father's Information</h2>
+            <div class="father-info">
                 <h4>Full name</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter full name" required>
                 <h4>Profession</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter profession" required>
                 <h4>Resident address</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter your address" required>
                 <h4>Business name and Address</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter business address" required>
                 
                 <h4>Nationality</h4>
                 <input type="radio" name="nationality">
-                <label>Nigerian</label>
+                <label class="radio">Nigerian</label>
                 <input type="radio" name="nationality">
-                <label>Other</label>
+                <label class="radio">Other</label>
                 
                 <h4>If other, state here</h4>
-                <input type="text">
+                <input type="text" placeholder="Enter your nationality">
                 
                 <h4>Telephone</h4>
-                <input type="tel" required>
+                <input type="tel" placeholder="E.g 08030003829" required>
                 
                 <h4>Email Adress</h4>
-                <input type="email" required>
+                <input type="email" placeholder="Enter email address" required>
                 
                 <h4>Religion</h4>
                 <input type="radio" name="religion">
-                <label>Christian</label>
+                <label class="radio">Christian</label>
                 <input type="radio" name="religion">
-                <label>Muslim</label>
+                <label class="radio">Muslim</label>
                 <input type="radio" name="religion">
-                <label>Atheist</label>
+                <label class="radio">Atheist</label>
             </div>
-        </form>
-            <div>
-                <h2>Father's Information</h2>
-                <hr>
+            <!-- mother's information -->
+            <h2>Mother's Information</h2>
+            <div class="mother-info">
                 <h4>Full name</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter full name" required>
                 <h4>Profession</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter your profession" required>
                 <h4>Resident address</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter address" required>
                 <h4>Business name and Address</h4>
-                <input type="text" required>
+                <input type="text" placeholder="Enter your business address" required>
                 
                 <h4>Nationality</h4>
                 <input type="radio" name="nationality">
-                <label>Nigerian</label>
+                <label class="radio">Nigerian</label>
                 <input type="radio" name="nationality">
-                <label>Other</label>
+                <label class="radio">Other</label>
                 
                 <h4>If other, state here</h4>
-                <input type="text">
+                <input type="text" placeholder="Enter nationality">
                 
                 <h4>Telephone</h4>
-                <input type="tel" required>
+                <input type="tel" placeholder="E.g 08030003829" required>
                 
                 <h4>Email Adress</h4>
-                <input type="email" required>
+                <input type="email" placeholder="Enter your email" required>
                 
                 <h4>Religion</h4>
                 <input type="radio" name="religion">
-                <label>Christian</label>
+                <label class="radio">Christian</label>
                 <input type="radio" name="religion">
-                <label>Muslim</label>
+                <label class="radio">Muslim</label>
                 <input type="radio" name="religion">
-                <label>Atheist</label>
+                <label class="radio">Atheist</label>
             </div>
             
-            <div>
-                <h2>Mother's Information</h2>
-                <hr>
-                <h4>Full name</h4>
-                <input type="text" required>
-                <h4>Profession</h4>
-                <input type="text" required>
-                <h4>Resident address</h4>
-                <input type="text" required>
-                <h4>Business name and Address</h4>
-                <input type="text" required>
-                
-                <h4>Nationality</h4>
-                <input type="radio" name="nationality">
-                <label>Nigerian</label>
-                <input type="radio" name="nationality">
-                <label>Other</label>
-                
-                <h4>If other, state here</h4>
-                <input type="text">
-                
-                <h4>Telephone</h4>
-                <input type="tel" required>
-                
-                <h4>Email Adress</h4>
-                <input type="email" required>
-                
-                <h4>Religion</h4>
-                <input type="radio" name="religion">
-                <label>Christian</label>
-                <input type="radio" name="religion">
-                <label>Muslim</label>
-                <input type="radio" name="religion">
-                <label>Atheist</label>
-            </div>
-            
-            <div>
+            <div class="child-info">
                 <h4>Name of sibling currently studying at Emarid College</h4>
-                <input type="text">
+                <input type="text" placeholder="Enter name of sibling">
             </div>
-            
-            <div>
-                <h2>Additional Information</h2>
-                <hr>
+            <!-- additional information -->
+            <h2>Additional Information</h2>
+            <div class="more-info">
                 <h4>Does your child have any known educational or special needs?</h4>
                 <textarea>Describe in details</textarea>
                 
                 <h4>Does your child have any physical disabilities?</h4>
-                <select>
-                    <option>Please select</option>
-                    <option>Yes</option>
-                    <option>No</option>
+                <select name="disabilities">
+                    <option value="">Please select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
 
                 <h4>Are there any other further information that you feel the school should be aware of?</h4>
                 <textarea>Describe in details</textarea>
-                </div>
-                
-                <div>
-                <h2>Child Current School Information</h2>
-                <hr>
-                
+            </div>
+
+                <!-- child's current school information -->
+            <h2>Child Current School Information</h2>
+            <div class="more-info">
                 <h4>Name of Headteacher</h4>
-                <textarea>First Name and Last Name</textarea>
+                <input type="text" placeholder="Name of headteacher">
                 
                 <h4>School Telephone No</h4>
-                <input type="tel">
+                <input type="tel" placeholder="E.g 08030003829">
                 
                 <h4>Name and Full Address of School</h4>
-                <input type="text" required>
+                <input type="text"  required>
                 <h4>Email Address</h4>
-                <input type="email" required>
+                <input type="email" placeholder="Enter school email address" required>
                 
                 <h4>School Website</h4>
                 <textarea>https//:</textarea>
                 
                 <h4>Admission Date</h4>
-                <input type="text">
-                </div>
-            
-                <div>
-                <h2>Kindly upload the files below</h2>
-                <hr>
+                <input type="date">
+            </div>
+            <!-- upload neccaray documents -->
+            <h2>Kindly upload the files below</h2>
+            <div class="document">
                 <h4>Child passport</h4>
                 <label>Upload passport</label><br>
                 <input type="file" name="passport-file" accept=".pdf,.jpg,.jpeg,.png" required>
@@ -243,7 +204,7 @@
                 </div><br>
                 <div class="btn">
                     <button>NEXT</button>
-            </div>
-            </form>
+                </div>
+        </form>
     </body>
 </html>

@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
     display: flex;
     justify-content: center;
-    margin: 10px;
+    align-items: center;
+    cursor: pointer;
+    height: 4rem;
+    
 }
 
 header p{
@@ -15,10 +19,30 @@ header p{
     color: rgb(11, 209, 11);
 }
 
-p >a{
+header p a{
+    text-decoration: none;
+    color: black;
+}
+
+a.active{
+    background-color: blue;
+    color: white;
+    padding-block: 1.37rem;
+    padding-inline: .5rem;
+}
+
+a:active{
     background-color: blue;
     border: none;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+}
+
+form >.child-info, 
+form > .father-info, 
+form > .mother-info,
+form > .more-info,
+form > .document{
+    margin: .5rem;
 }
 
 h1{
@@ -28,14 +52,21 @@ h1{
     padding: 20px;
 }
 
-hr{
-    margin-bottom: 10px;
-}
-
 h2{
     color: rgb(11, 209, 11);
     padding: 10px 0;
+    border-bottom: .1rem solid black;
 }
+
+label{
+    display: block;
+}
+
+.radio{
+    display: inline;
+    width: 1%;
+}
+
 
 h4{
     margin: 10px 0;
